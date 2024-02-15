@@ -6,7 +6,7 @@
 }
 
 .container{
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 0.6fr 3fr;
 }
@@ -140,10 +140,6 @@ button{
     border-radius: 30px;
 }
 
-.content{
-    background-color: rgba(100, 106, 115, 0.2);
-}
-
 .profilepicture{
     width: 40px;
     height: auto;
@@ -152,4 +148,59 @@ button{
 
 .biggerpfp{
     width: 70px;
+}
+
+.content{
+    background-color: rgba(100, 106, 115, 0.1);
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.leftsidecards{
+    height: 90%;
+    display: grid;
+    resize: both;
+    overflow: auto;
+    padding: 0rem 1.5rem;
+    grid-template: repeat(3, minmax(150px, 0.25fr)) / repeat(2, minmax(200px, 0.7fr));
+    gap: 2rem;
+}
+
+.contentTitle{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.projectCard{
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(100, 106, 115, 0.4) 5px 5px 5px;
+    border-left: 10px solid orange;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.cardtextcontainer{
+    padding: 2rem;
+    color: grey;
+}
+
+.cardiconcontainer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding-left: 70%;
+}
+
+.cardtitle{
+    font-weight: bolder;
+    font-size: 20px;
+    padding-bottom: 0.2rem;
+    color: black;
+}
+
+.rightsidecontent{
+    background-color: black;
 }
