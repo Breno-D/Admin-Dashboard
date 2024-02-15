@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.7fr 3fr;
+}
+
+.dashboard{
+    background-color: #2563eb;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr;
+}
+
+.icon-dashboard{
+    width: 50px;
+    height: 50px;
+}
+
+.logo{
+    padding: 1rem 2rem;
+    font-size: 40px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo p{
+    padding-left: 10px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+ul{
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+}
+
+ul li{
+    font-size: 20px;
+    padding-left: 2rem;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.content{
+    background-color: #eff6ff;
+}
+
