@@ -8,7 +8,7 @@
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 0.7fr 3fr;
+    grid-template-columns: 0.6fr 3fr;
 }
 
 .dashboard{
@@ -25,7 +25,7 @@
 }
 
 .logo{
-    padding: 1rem 2rem;
+    padding: 1rem 1rem 0rem 2rem;
     font-size: 40px;
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -57,7 +57,99 @@ ul li{
     align-items: center;
 }
 
-.content{
-    background-color: #eff6ff;
+.rightSide{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
 }
 
+.header{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    box-shadow: rgba(100, 106, 115, 0.4) 0px 5px 5px;
+}
+
+.headerleft,
+.headerright{
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+
+.headerright{
+    gap: 2rem;
+}
+
+.searchbar{
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 30px 1fr;
+}
+
+input{
+    background-color: rgba(100, 106, 115, 0.2);
+    border: 0px;
+    border-radius: 20px;
+}
+
+.userbar{
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+
+.userinfo{
+    display: grid;
+    grid-template-rows: 20% 90%;
+    gap: 0.3rem;
+    padding-left: 1rem;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.usernametext{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.usernametextsmall
+{
+    font-size: 15px;
+}
+
+.headerprofile{
+    display: grid;
+    grid-template-columns: 30px 40px auto;
+    align-items: center;
+    padding-left: 5rem;
+    gap: 1.5rem;
+}
+
+.headerbuttons{
+    display: grid; 
+    grid-template-columns: 100px 100px 100px;
+    gap: 2rem;
+}
+
+button{
+    padding: 10px 30px;
+    width: 100px;
+    color: white;
+    background-color: #2563eb;
+    border: 0px;
+    border-radius: 30px;
+}
+
+.content{
+    background-color: rgba(100, 106, 115, 0.2);
+}
+
+.profilepicture{
+    width: 40px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.biggerpfp{
+    width: 70px;
+}
